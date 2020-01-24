@@ -1,0 +1,11 @@
+[alias]
+  a = add
+  aa = add .
+  cmm = commit -m 
+  co = checkout
+  cob = checkout -b
+  br = branch
+  lg = log --graph --pretty=format:'%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) %C(cyan)<%an>%Creset' --abbrev-commit
+  prb = pull --rebase origin
+  po = push origin 
+  s = status

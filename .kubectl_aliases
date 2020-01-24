@@ -1,0 +1,8 @@
+alias k='kubectl'
+alias kg='kubectl get'
+alias kgrep='kubectl get pods | grep'
+alias kd='kubectl describe pods'
+alias klf='kubectl logs -f --tail=100'
+alias kl='kubectl logs'
+alias kdelpod='kubectl delete pods'
+alias kexec='kubectl exec -it'
