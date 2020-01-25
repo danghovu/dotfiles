@@ -9,7 +9,15 @@
       }
     }
   },
-  "coc.preferences.formatOnSaveFiletypes": ["json", "jsonc", "go"],
+  "coc.preferences.formatOnSaveFiletypes": [
+    "json",
+    "jsonc",
+    "go",
+    "javascriptreact",
+    "typescriptreact",
+    "javascript",
+    "typescript"
+  ],
   "coc.preferences.formatOnType": true,
   "diagnostic.checkCurrentLine": true
 }

@@ -103,23 +103,23 @@ let g:user_emmet_settings = {
       \}
 
 
-let g:ale_linters = {
-\  'javascript': ['eslint'],
-\  'jsx': ['eslint'],
-\  'typescript': ['tslint'],
-\  'python': ['','pylint']
-\}
+" let g:ale_linters = {
+" \  'javascript': ['eslint'],
+" \  'jsx': ['eslint'],
+" \  'typescript': ['tslint'],
+" \  'python': ['','pylint']
+" \}
 
-let g:ale_fixers = {
-\  'javascript': ['eslint', ],
-\  'typescript': ['tslint'],
-\  'jsx': ['prettier','eslint'],
-\  'python': ['autopep8','yapf'],
-\  'css': ['prettier']
-\}
+" let g:ale_fixers = {
+" \  'javascript': ['eslint', ],
+" \  'typescript': ['tslint'],
+" \  'jsx': ['prettier','eslint'],
+" \  'python': ['autopep8','yapf'],
+" \  'css': ['prettier']
+" \}
 
-let g:ale_sign_column_always = 1
-let g:ale_fix_on_save = 1
+" let g:ale_sign_column_always = 1
+" let g:ale_fix_on_save = 1
 
 
 " Autofix entire buffer with eslint_d:
