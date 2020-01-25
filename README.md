@@ -4,9 +4,9 @@
 ## 1. Install [Karabiner](https://pqrs.org/osx/karabiner/) (MacOSX only)
 
 ## 2. Install zsh, oh-my-zsh and following plugins:
-    * POWERLEVEL9k
-    * zsh_autosuggestions
-    * zsh-syntax-highlighting
+* POWERLEVEL9k
+* zsh_autosuggestions
+* zsh-syntax-highlighting
 
 ## 3. Run script
   ```
