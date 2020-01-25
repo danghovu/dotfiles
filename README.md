@@ -10,7 +10,7 @@
 
 ## 3. Run script
   ```
-  sh ./copy_config.sh
+  sh ./restore_config.sh
   ```
 
 ## 4. Config ripgrep and fzf
