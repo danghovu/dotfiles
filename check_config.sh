@@ -3,11 +3,15 @@
 #cp $HOME/.config/nvim/{coc-settings.json,init.vim} .
 #cp $HOME/{.vimrc,.zshrc,.gitconfig,.kubectl_aliases,.bash_aliases} .
 
-files=("$HOME/.config/nvim/{coc-settings.json,init.vim}")
+files=("$HOME/.config/kitty/kitty.conf" "$HOME/.config/kitty/theme.conf" "$HOME/.config/karabiner/karabiner.json" "$HOME/.config/nvim/coc-settings.json" "$HOME/.config/nvim/init.vim" "$HOME/.vimrc" "$HOME/.zshrc" "$HOME/.gitconfig" "$HOME/.kubectl_aliases" "$HOME/.bash_aliases")
 for f in "${files[@]}"
 do
-    echo $f
+  target="${f##*/}" 
+  echo "======**======"
+  echo "Handling $target" 
   omit_flag=false
+  rm -f "$target"
+  touch "$target"
   while read -r line; do
     if [ "$line" == \"OMIT_START ]; 
     then
@@ -21,9 +25,9 @@ do
     then
       continue
     fi
-    target="${f##*/}" 
-    rm -f "$target"
-    touch "$target"
     echo $line >> "$target"
   done < $f 
 done
+
+echo "DONE"
+
