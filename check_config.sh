@@ -26,10 +26,11 @@ do
     then
       continue
     fi
-    echo "$line" >> "$target"
+    printf "%s\n" "$line" >> "$target"
   done < $f 
 done
 IFS="$originalIFS"
 echo "DONE"
+
 
 
