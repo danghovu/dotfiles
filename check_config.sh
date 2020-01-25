@@ -12,7 +12,7 @@ do
   omit_flag=false
   rm -f "$target"
   touch "$target"
-  while read -r line; do
+  while IFS= read line; do
     if [ "$line" == \"OMIT_START ]; 
     then
       omit_flag=true
@@ -25,7 +25,7 @@ do
     then
       continue
     fi
-    echo $line >> "$target"
+    echo "$line" >> "$target"
   done < $f 
 done
 
