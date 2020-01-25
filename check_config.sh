@@ -13,11 +13,11 @@ do
   rm -f "$target"
   touch "$target"
   while IFS= read line; do
-    if [ "$line" == \"OMIT_START ]; 
+    if [ "$line" == \"OMIT_START ] || [ "$line" == #OMIT_START ]; 
     then
       omit_flag=true
       continue
-    elif [ "$line" == \"OMIT_END ] && [ $omit_flag == true ] ; 
+    elif [ "$line" == \"OMIT_END || "$line" == #OMIT_END ] && [ $omit_flag == true ] ; 
     then
       omit_flag=false
       continue
