@@ -19,7 +19,7 @@ mkdir ~/.config/karabiner
 cp karabiner.json ~/.config/karabiner
 mkdir ~/.config/nvim
 cp ./{coc-settings.json,init.vim} ~/.config/nvim
-cp ./{.vimrc,.zshrc,.gitconfig,.kubectl_aliases,.bash_aliases} ~/
+cp ./{.vimrc,.zshrc,.gitconfig,.kubectl_aliases,.bash_aliases,.vim_snippet} ~/
 
 #Install golang libs
 nvim +PlugInstall
