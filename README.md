@@ -16,4 +16,5 @@
 ## 4. Config ripgrep and fzf
   Click [here](https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861)
 
-
+# Contact:
+* Email: vudangho96@gmail.com
