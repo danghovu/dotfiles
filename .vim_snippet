@@ -1,0 +1,14 @@
+inoremap {      {}<Left>
+inoremap (      ()<Left>
+inoremap "      ""<Left>
+inoremap '      ''<Left>
+inoremap `      ``<Left>
+inoremap /*     /**/<Left><Left>
+
+"Single character
+inoremap <Leader>{      {
+inoremap <Leader>(      (
+inoremap <Leader>"      "
+inoremap <Leader>'      '
+inoremap <Leader>`      `
+inoremap <Leader>/*     /*
