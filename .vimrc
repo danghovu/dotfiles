@@ -15,6 +15,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'https://github.com/majutsushi/tagbar.git'
+Plug 'srcery-colors/srcery-vim'
 
 call plug#end()
 
@@ -52,7 +53,7 @@ let g:user_emmet_settings = {
       \  },
       \}
 let g:lightline = {
-  \   'colorscheme': 'PaperColor',
+  \   'colorscheme': 'srcery',
   \   'active': {
   \     'left':[ [ 'mode', 'paste' ],
   \              [ 'gitbranch', 'readonly', 'filename', 'modified' ]
@@ -89,7 +90,7 @@ set t_Co=256
 " syntax enable
 set background=dark
 " let g:solarized_termcolors=256
-colorscheme gruvbox
+colorscheme srcery
 set termguicolors
 
 
@@ -137,7 +138,7 @@ nnoremap <C-g> :Rg<Cr>
 "command! -bang -nargs=* F call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)
 command! -bang -nargs=* Rg
       \ call fzf#vim#grep(
-      \ "rg --column --line-number --no-heading --no-fixed-strings --ignore-case --no-ignore --hidden --follow --color=always --glob '!{.git,node_modules,vendor,.fusebox,.idea,tmp}/*' ".shellescape(<q-args>), 1,
+      \ "rg --column --line-number --no-heading --no-fixed-strings --ignore-case --hidden --follow --color=always --glob '!{.git,node_modules,vendor,.fusebox,.idea,tmp}/*' ".shellescape(<q-args>), 1,
       \   <bang>0 ? fzf#vim#with_preview({'options': '--delimiter : --nth 4..'},'up:60%')
       \           : fzf#vim#with_preview({'options': '--delimiter : --nth 4..'},'right:50%', '?'),
       \   <bang>0)
