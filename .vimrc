@@ -30,7 +30,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
-nnoremap <esc><esc> :silent! nohls<cr>
+nmap <esc> :silent! nohls<cr>
 
 " for jsx
 autocmd FileType javascript.jsx noremap <buffer> <c-f> :call JsxBeautify()<cr>
