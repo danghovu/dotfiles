@@ -14,8 +14,8 @@ Plug 'https://github.com/editorconfig/editorconfig-vim.git'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
-Plug 'https://github.com/majutsushi/tagbar.git'
 Plug 'srcery-colors/srcery-vim'
+Plug 'liuchengxu/vista.vim'
 
 call plug#end()
 
@@ -45,6 +45,21 @@ autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
 
+function! NearestMethodOrFunction() abort
+  return get(b:, 'vista_nearest_method_or_function', '')
+endfunction
+set statusline+=%{NearestMethodOrFunction()}
+
+
+
+autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
+let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
+let g:vista_default_executive = 'coc'
+let g:vista_fzf_preview = ['right:50%']
+let g:vista_update_on_text_changed=1
+
+map <Leader>v :call vista#finder#fzf#Run()<CR>
+
 let g:user_emmet_expandabbr_key='<Tab>'
 imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 let g:user_emmet_settings = {
@@ -55,16 +70,17 @@ let g:user_emmet_settings = {
 let g:lightline = {
   \   'colorscheme': 'srcery',
   \   'active': {
-  \     'left':[ [ 'mode', 'paste' ],
+  \     'left':[ [ 'mode', 'paste', 'vista' ],
   \              [ 'gitbranch', 'readonly', 'filename', 'modified' ]
   \     ]
   \   },
   \   'component': {
   \     'lineinfo': ' %3l:%-2v',
   \   },
-  \ 'component_function': {
-  \   'gitbranch': 'fugitive#head'
-  \ },
+  \   'component_function': {
+  \     'gitbranch': 'fugitive#head',
+  \     'vista': 'NearestMethodOrFunction'
+  \   },
   \ }
 
 
@@ -183,37 +199,6 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
 
-" ctags for go
-nmap <F2> :TagbarToggle<CR>
-let g:tagbar_type_go = {
-\ 'ctagstype' : 'go',
-\ 'kinds'     : [
-    \ 'p:package',
-    \ 'i:imports:1',
-    \ 'c:constants',
-    \ 'v:variables',
-    \ 't:types',
-    \ 'n:interfaces',
-    \ 'w:fields',
-    \ 'e:embedded',
-    \ 'm:methods',
-    \ 'r:constructor',
-    \ 'f:functions'
-\ ],
-\ 'sro' : '.',
-\ 'kind2scope' : {
-    \ 't' : 'ctype',
-    \ 'n' : 'ntype'
-\ },
-\ 'scope2kind' : {
-    \ 'ctype' : 't',
-    \ 'ntype' : 'n'
-\ },
-\ 'ctagsbin'  : 'gotags',
-\ 'ctagsargs' : '-sort -silent'
-\ }
-
-
 " -------------------------------------------------------------------------------------------------
 " coc.nvim default settings
 " -------------------------------------------------------------------------------------------------
@@ -300,3 +285,4 @@ map  <Leader>w <Plug>(easymotion-bd-w)
 nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 source ~/.vim_snippet
+
