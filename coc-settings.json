@@ -1,7 +1,7 @@
 {
   "languageserver": {
     "golang": {
-      "command": "/Users/vudang/Code/go/bin/gopls",
+      "command": "gopls",
       "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
       "filetypes": ["go"],
       "initializationOptions": {
@@ -16,7 +16,8 @@
     "javascriptreact",
     "typescriptreact",
     "javascript",
-    "typescript"
+    "typescript",
+    "python"
   ],
   "coc.preferences.formatOnType": true,
   "diagnostic.checkCurrentLine": true
