@@ -16,7 +16,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'srcery-colors/srcery-vim'
 Plug 'liuchengxu/vista.vim'
-
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
 " Always show statusline
