@@ -682,7 +682,8 @@
                                     {
                                         "bundle_identifiers": [
                                             "^net\\.kovidgoyal\\.kitty$",
-                                            "com.googlecode.iterm2"
+                                            "com.googlecode.iterm2",
+                                            "com.microsoft.VSCode"
                                         ],
                                         "type": "frontmost_application_if"
                                     }
@@ -826,4 +827,3 @@
             }
         }
     ]
-}

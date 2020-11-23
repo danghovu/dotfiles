@@ -17,7 +17,8 @@
     "typescriptreact",
     "javascript",
     "typescript",
-    "python"
+    "python",
+    "cs"
   ],
   "coc.preferences.formatOnType": true,
   "diagnostic.checkCurrentLine": true

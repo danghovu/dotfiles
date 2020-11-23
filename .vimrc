@@ -17,6 +17,8 @@ Plug 'mattn/emmet-vim'
 Plug 'srcery-colors/srcery-vim'
 Plug 'liuchengxu/vista.vim'
 Plug 'preservim/nerdcommenter'
+Plug 'OmniSharp/omnisharp-vim'
+
 call plug#end()
 
 " Always show statusline
