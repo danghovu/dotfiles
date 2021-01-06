@@ -109,7 +109,9 @@ set t_Co=256
 set background=dark
 " let g:solarized_termcolors=256
 colorscheme srcery
-set termguicolors
+if (has('termguicolors'))
+  set termguicolors
+endif
 
 
 let g:user_emmet_expandabbr_key = '<C-e>'

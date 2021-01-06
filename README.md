@@ -4,7 +4,11 @@
 ## 1. Install [Karabiner](https://pqrs.org/osx/karabiner/) (MacOSX only)
 
 ## 2. Install zsh, oh-my-zsh and following plugins:
-* POWERLEVEL9k
+* POWERLEVEL10k
+  ```
+  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+  ```
 * zsh_autosuggestions
 * zsh-syntax-highlighting
 
