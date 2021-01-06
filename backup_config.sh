@@ -3,7 +3,7 @@
 #cp $HOME/.config/nvim/{coc-settings.json,init.vim} .
 #cp $HOME/{.vimrc,.zshrc,.gitconfig,.kubectl_aliases,.bash_aliases} .
 
-files=("$HOME/.config/kitty/kitty.conf" "$HOME/.config/kitty/theme.conf" "$HOME/.config/karabiner/karabiner.json" "$HOME/.config/nvim/coc-settings.json" "$HOME/.config/nvim/init.vim" "$HOME/.vimrc" "$HOME/.zshrc" "$HOME/.gitconfig" "$HOME/.kubectl_aliases" "$HOME/.bash_aliases" "$HOME/.vim_snippet" "$HOME/.tmux.conf" "$HOME/.config/alacritty/alacritty.yml" "$HOME/.p10k.zsh")
+files=("$HOME/.config/kitty/kitty.conf" "$HOME/.config/kitty/theme.conf" "$HOME/.config/karabiner/karabiner.json" "$HOME/.config/nvim/coc-settings.json" "$HOME/.config/nvim/init.vim" "$HOME/.vimrc" "$HOME/.zshrc" "$HOME/.gitconfig" "$HOME/.kubectl_aliases" "$HOME/.bash_aliases" "$HOME/.vim_snippet" "$HOME/.tmux.conf" "$HOME/.config/alacritty/alacritty.yml" "$HOME/.p10k.zsh" "$HOME/.screenrc")
 originalIFS="$IFS"
 for f in "${files[@]}"
 do
