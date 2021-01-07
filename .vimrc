@@ -18,6 +18,8 @@ Plug 'srcery-colors/srcery-vim'
 Plug 'liuchengxu/vista.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'OmniSharp/omnisharp-vim'
+Plug 'voldikss/vim-floaterm'
+
 
 call plug#end()
 
@@ -290,3 +292,10 @@ nmap <Leader>w <Plug>(easymotion-overwin-w)
 
 source ~/.vim_snippet
 
+"let g:floaterm_width = 100
+let g:floaterm_position = 'topright'
+let g:floaterm_winblend = 0
+let g:floaterm_width = 0.4
+
+noremap  <leader>t  :FloatermToggle<CR>
+tnoremap <leader>t  <C-\><C-n>:FloatermToggle<CR>
