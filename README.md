@@ -12,15 +12,15 @@
 * zsh_autosuggestions
 * zsh-syntax-highlighting
 
+## 3. Config ripgrep and fzf
+  Click [here](https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861)
+
+## 4. Install [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
+
 ## 3. Run script
   ```
   sh ./restore_config.sh
   ```
-
-## 4. Config ripgrep and fzf
-  Click [here](https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861)
-
-## 5. Install [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 
 # Contact:
 Email: vudangho96@gmail.com
