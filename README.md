@@ -1,5 +1,5 @@
 # Backup vim 's configuration 
-<p>All of my dotfiles, neovim's configuration, kitty (terminal) 's configuration ... </p>
+<p>All of my dotfiles: neovim's configuration, kitty (terminal) 's configuration ... </p>
 
 ## 1. Install [Karabiner](https://pqrs.org/osx/karabiner/) (MacOSX only)
 
@@ -19,6 +19,8 @@
 
 ## 4. Config ripgrep and fzf
   Click [here](https://medium.com/@sidneyliebrand/how-fzf-and-ripgrep-improved-my-workflow-61c7ca212861)
+
+## 5. Install [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 
 # Contact:
 Email: vudangho96@gmail.com

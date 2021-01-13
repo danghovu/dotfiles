@@ -8,7 +8,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
-export TERM="xterm-256color"
+#export TERM="xterm-256color"
 export ZSH="$HOME/.oh-my-zsh"
 source $ZSH/oh-my-zsh.sh
 

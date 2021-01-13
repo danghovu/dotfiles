@@ -106,11 +106,12 @@ set undodir=~/.vim/undodir
 let NERDTreeShowHidden=1
 "map <C-g> :NERDTreeToggle<CR>
 
-set t_Co=256
 " syntax enable
 set background=dark
 " let g:solarized_termcolors=256
 colorscheme srcery
+set t_Co=256
+set termguicolors
 if (has('termguicolors'))
   set termguicolors
 endif
