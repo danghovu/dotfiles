@@ -17,7 +17,7 @@
 
 ## 4. Install [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect)
 
-## 3. Run script
+## 5. Run script
   ```
   sh ./restore_config.sh
   ```
